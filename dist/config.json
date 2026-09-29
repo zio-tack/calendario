@@ -1,0 +1,7 @@
+{
+  "slotDuration": "00:05:00",
+  "slotMinTime": "06:00:00",
+  "slotMaxTime": "22:00:00",
+  "firstDay": 1,
+  "defaultColor": "#1f6f8b"
+}
