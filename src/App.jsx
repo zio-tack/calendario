@@ -38,7 +38,6 @@ export default function App({ config }) {
         start: `${o.date}T${o.startTime}`, end: `${o.date}T${o.endTime}`,
         backgroundColor: o.color, borderColor: o.color,
         textColor: textOn(o.color),
-        borderColor: o.color,
         classNames: isLight(o.color) ? ['evento-chiaro'] : [],
         extendedProps: { occ: o },               // teniamo l'occorrenza per click/drag
       })));
@@ -108,6 +107,9 @@ export default function App({ config }) {
           slotMinTime={config.slotMinTime}
           slotMaxTime={config.slotMaxTime}
           nowIndicator
+          allDaySlot={false}
+          eventTimeFormat={{ hour: '2-digit', minute: '2-digit', hour12: false, omitZeroMinute: false }}
+          slotLabelFormat={{ hour: '2-digit', minute: '2-digit', hour12: false, omitZeroMinute: false }}
           views={{ dayGridMonth: { eventDisplay: 'block' } }}
           height="calc(100vh - 64px)"
           selectable editable                    // selectable = crea, editable = sposta/ridimensiona
