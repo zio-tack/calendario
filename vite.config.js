@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
-  base: './calendario/', // percorsi relativi: funziona anche se ospitato in una sottocartella
+  base: '/calendario/', // percorsi relativi: funziona anche se ospitato in una sottocartella
   plugins: [
     react(),
     // PWA: genera manifest + service worker (l'app funziona offline e si installa)
