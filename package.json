@@ -3,6 +3,8 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
+  "homepage": "https://zio-tack.github.io/calendario",
+  "_homepage": "http://localhost:5173/calendario",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
